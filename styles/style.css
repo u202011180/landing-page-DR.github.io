@@ -1,0 +1,275 @@
+* {
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 75%;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+:root {
+  --primary: #269916;
+  --secondary: #1bd39c;
+}
+
+header, footer {
+  color: white;
+  width: 100%;
+  height: 90px;
+  background-color: var(--primary);
+  padding: 24px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 120%;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex: 1 1 0;
+}
+
+ul > li {
+  margin-left: 30px;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.link:hover {
+  color: cyan;
+}
+
+
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 65px auto;
+}
+.banner .row .banner-info{
+  font-size: 15px;
+}
+.banner .row{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.banner .row .image{
+  flex: 1 1 45rem;
+  width: 100%;
+  border-radius: 1%;
+  text-align: center;
+}
+.banner .row .image img{
+  width: 70%;
+  border-radius: 1%;
+}
+
+.banner .row .banner-info {
+  flex: 1 1 45rem;
+  padding: 2rem;
+  text-align: center;
+  margin-left: 5px;
+  flex: auto;
+}
+
+.banner-info h2 {
+  font-weight: bold;
+}
+
+.banner-info p {
+  margin: 20px 0;
+}
+
+.banner-info a {
+  margin-left: 38px;
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+.banner-info a:hover {
+  text-decoration: none;
+}
+
+.banner-info button {
+  background-color: var(--primary);
+  color: white;
+  width: 185px;
+  height: 40px;
+  border-color: transparent;
+  border-radius: 13px;
+}
+.banner-info .CTA{
+  text-align: center;
+}
+.banner-info button:hover {
+  filter: brightness(1.1);
+  cursor: pointer;
+}
+
+/* division */
+
+.divider {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  height: 2px;
+  background-color: var(--primary);
+}
+
+/* division */
+
+.details {
+  max-width: 1200px;
+  margin: 65px auto;
+  padding: 3rem;
+}
+
+.details h3 {
+  font-size: 24px;
+  color: var(--primary);
+  text-align: center;
+}
+.details .texto {
+  font-size: 120%;
+}
+
+.user-type {
+  margin-top: 25px;
+}
+
+.type-name {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.type-description {
+  margin-top: 5px;
+}
+.contacto{
+  max-width: 1200px;
+  margin: 65px auto;
+  padding: 1rem;
+}
+.contacto .heading{
+  font-size: 24px;
+  color: var(--primary);
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.contacto .row{
+  display: flex;
+}
+.contacto .row .image{
+  flex: 1 1 45rem;
+  text-align: center;
+}
+.contacto .row .image img{
+  width: 100%;
+  border-radius: 5%;
+}
+.contacto .row{
+  padding: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.contacto .row form{
+  flex: 1 1 45rem;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+.contacto .row form h3{
+  font-weight: lighter;
+  font-size: 2rem;
+  color: #2ca792;
+  padding-bottom: 1rem;
+}
+.contacto .row form .inputBox{
+  display: flex;
+  padding-left: 1rem;
+  align-items:center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border: .1rem solid rgb(7, 151, 26);
+}
+.contacto .row form .inputBox span{
+  color: rgb(19, 146, 25);
+  font-size: 2rem;
+  padding-left: .1rem;
+}
+.contacto .row form .inputBox input{
+  width: 100%;
+  padding: .8rem;
+  font-size: 1rem;
+  color: black;
+  text-transform: none;
+}
+.btn{
+  padding: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  background-color: #44976e;
+  color: white;
+  border-radius: 8%;
+}
+footer{
+  background-color: var(--primary);
+  color: white;
+}
+footer .redes{
+  padding:1rem 0;
+}
+
+footer .redes a {
+  width: 2.5rem;
+  font-size: 1.2rem;
+  color: white;
+  margin: .5rem;
+}
+footer{
+  font-size: 120%;
+}
+@media (max-width: 1500)
+{
+  html{
+    font-size: 80%;
+  }
+  section, main{
+    padding: 3rem;
+  }
+  
+}
+@media (max-width: 750px)
+{
+  html{
+    font-size: 70%;
+  }
+  header nav{
+    visibility: hidden;
+  }
+  .banner .row .banner-info .CTA{
+    align-items: center;
+  }
+  .banner .banner-info{
+    text-align: center;
+  }
+}
+@media (max-width:450px){
+  html{
+      font-size: 50%;
+  }
+}
